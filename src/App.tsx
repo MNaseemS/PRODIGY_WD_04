@@ -1,13 +1,23 @@
-import './App.css'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Experience from "./components/Experience";
 
-function App() {
-   return (
+
+const App = () => {
+  return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <main>
+        <Navbar/>
+        <Home />
+        <About/>
+        <Portfolio/>
+        <Experience/>
+      </main>
     </>
-  )
+  );
 }
 
 export default App
